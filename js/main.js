@@ -1,4 +1,4 @@
-var countDownDate = new Date("Sep 28, 2022 00:00:00").getTime(); 
+var countDownDate = new Date("Oct 7, 2022 00:00:00").getTime(); 
 
 //globale variables
 
