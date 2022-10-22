@@ -1,0 +1,107 @@
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.app__profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+
+}
+
+.app__profile-item{
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    
+
+    img {
+        width: 100%;
+        height: 170px;
+        border-radius: 15px;
+        object-fit: cover;
+
+        &:hover {
+            border-bottom-right-radius: 0rem;
+            border-bottom-left-radius: 0rem;
+            box-shadow: 0.17rem 0.4rem var(--secondary-color);
+            
+        }
+    }
+
+    @media screen and (min-width: 2000px) 
+    {
+        width: 370px;
+        margin: 2rem 4rem;
+
+        img {
+            width: 100%;
+            height: 320px;
+        }
+    }
+    &:hover {
+        background: lightgray;
+
+        img{
+           
+            transform: scale(1.1);
+            animation: fadeInUp;
+            animation-duration: 0.74s;
+            
+            @media screen and (min-width: 2000px){
+                transform: scale(1.05);
+                
+            }
+        }
+        h2 {
+            color: black;
+        }
+        padding: 0.5rem;
+        border-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+        border-bottom-left-radius: 1.2rem;
+        animation: mymove 1s ease-in-out infinite;
+        margin-top: 5rem;
+
+        @keyframes mymove {
+            100%   {
+                
+                
+            }
+            75%  {
+                margin-top: 4rem;
+            }
+            50%  {
+                margin-top: 3.7rem;
+                background: lightgray;
+            }
+            25%  {
+
+            }
+            0% {
+                
+               
+            }
+            
+          }
+    }
+    
+}
+
+.copyright{
+    position: relative;
+    top: 25vh;
+    bottom: 0;
+    left: 0; 
+    
+    width: 100%;
+}

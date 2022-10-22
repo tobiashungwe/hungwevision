@@ -1,0 +1,345 @@
+/*---------------------*/
+/*      IMPORTS        */
+/*---------------------*/
+@import 'animate.css';
+
+
+
+
+/*---------------------*/
+/*    HTML ELEMENTS    */
+/*---------------------*/
+
+
+
+
+
+/*---------------------*/
+/* CONTAINING ELEMENTS */
+/*---------------------*/
+
+
+
+
+/*------------------------*/
+/* PAGE SPECIFIC ELEMENTS */
+/*------------------------*/
+#home {
+    position: relative;
+    background: url('../../assets/bgIMG.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    
+    .app__wrapper {
+        padding: 0;
+        
+        .copyright{
+            display: none;
+            
+        }
+    }    
+}
+
+.app__header {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    padding: 6rem 2rem 0;
+    
+    @media screen and (min-width: 2000px) {
+        padding-top: 8rem;
+    }
+
+    @media screen and (max-width: 1440px) {
+        flex-direction: column;
+    }
+    
+    
+    @media screen and (max-width: 450px) {
+        padding-top: 6rem 1rem 2rem;
+    }
+
+   
+}
+
+.app__header-info {
+    flex: 0.65;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+
+    @media screen and (max-width: 2000px) {
+        width: 100%;
+        margin-right:  0rem; 
+    }
+}
+
+.app__header-badge {
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+   
+    
+    .badge-cmp, .tag-cmp {
+        padding: 2rem 3rem;
+        border: var(--white-color);
+        border-radius: 15px; 
+        flex-direction: row;
+        width: auto;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+    }
+
+    .tag-cmp {
+        flex-direction: column;
+        margin-top: 3rem;
+        
+       
+        
+        
+        p {
+            width: 100%;
+            text-transform: uppercase;
+            text-align: right;
+
+           
+           
+        }
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            div{
+                display: flex;
+                width: fit-content;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                
+                p{
+                    padding: 0rem 1.2rem 1rem 2rem;
+                    width: 100%;
+                }
+            }
+             
+            .title{
+                font-size: 1.0rem;
+               
+            }
+
+            strong {
+                width: 100%;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 1.2rem;
+            }
+        }
+       
+        &:hover {
+           
+                    
+                   
+            .secret {
+                display: block;
+                animation: fadeInDown; 
+                animation-duration: 1.5s; 
+                font-weight: bolder;
+
+            }
+
+            
+           
+            
+        }
+        
+        
+       
+            
+        
+       
+
+       
+
+        
+    }
+
+    section {
+        padding: 1.5rem;
+        font-size: 3.5rem; 
+        animation: wobble; 
+        animation-duration: 2s; 
+
+        --animate-repeat: infinite;
+        
+        
+        @media screen and (min-width: 2000px)
+        {
+            font-size: 5rem;
+            
+        }
+
+    }
+
+    @media screen and (max-width: 1200px)
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+}
+
+.app__header-circles {
+    flex: 0.75;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 1rem;
+    
+    div {
+        
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    
+        //background: linear-gradient(333deg, #ffedbc, #ed4264, #3d0510);
+        //background: linear-gradient(333deg, #f3efef, #cacaca, #363636);
+        background: linear-gradient(333deg, var(--primary-color), #a1a1a1);
+        background-size: 600% 600%;
+    
+        -webkit-animation: autumnBackgroudgradiant 22s ease infinite;
+        -moz-animation: autumnBackgroudgradiant 22s ease infinite;
+        animation: autumnBackgroudgradiant 22s ease infinite;
+        
+        
+        @-webkit-keyframes autumnBackgroudgradiant {
+            0%{background-position:9% 0%}
+            50%{background-position:92% 100%}
+            100%{background-position:9% 0%}
+        }
+        @-moz-keyframes autumnBackgroudgradiant {
+            0%{background-position:9% 0%}
+            50%{background-position:92% 100%}
+            100%{background-position:9% 0%}
+        }
+        @keyframes autumnBackgroudgradiant {
+            0%{background-position:9% 0%}
+            50%{background-position:92% 100%}
+            100%{background-position:9% 0%}
+        }
+        
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        img {
+            width: 60%;
+            height: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        
+    }
+
+    
+
+    div:nth-child(1) {
+        width: 100px;
+        height:  100px;
+    }
+
+    div:nth-child(2) {
+        width: 150px;
+        height:  150px;
+        margin: 1.75rem;
+    }
+
+    div:nth-child(3) {
+        width: 70px;
+        height:  70px;
+
+        
+    }
+
+
+    @media screen and (min-width:2000px) {
+            
+        div:nth-child(1) {
+            width: 400px;
+            height:  400px;
+        }
+
+        div:nth-child(2) {
+            width: 170px;
+            height:  170px;
+            margin: 1.75rem;
+        }
+
+        div:nth-child(3) {
+            width: 200px;
+            height:  200px;
+
+            
+        }
+
+
+    }
+
+    @media screen and (max-width:1200px) {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 0;
+            
+            div {
+                margin: 1rem;
+            }
+        
+    
+    
+    }
+}
+
+.app__header-img {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    
+
+    img {
+        width: 100%;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .overlay_circle {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+    }
+
+    @media screen and (max-width:1200px) {
+        margin: 2rem 0;
+    }
+}
+
+
+
+/* --- Home --- */
+
