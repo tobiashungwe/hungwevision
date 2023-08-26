@@ -8,13 +8,13 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
         <div>
-            <BsTwitter/>
+          <a href="https://twitter.com/HungweVision"> <BsTwitter/></a>
         </div>
         <div>
-            <FaFacebookF/>
+            <a href="https://www.facebook.com/tobiashungwe"><FaFacebookF/></a>
         </div>
         <div>
-            <BsInstagram/>
+            <a href="https://www.instagram.com/hungwevision/"><BsInstagram/></a>
         </div>
     </div>
   )
