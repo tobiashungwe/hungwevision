@@ -50,6 +50,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.77.5",
+    "sass-loader": "^14.2.1"
   }
 }
