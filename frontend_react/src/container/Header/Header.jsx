@@ -1,5 +1,3 @@
-import React, {useState} from 'react'; 
-import {HiMenuAlt4, HiX} from 'react-icons/hi';
 import { motion} from "framer-motion"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
